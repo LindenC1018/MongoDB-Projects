@@ -15,6 +15,7 @@ const aboutContent = "A Mongoose Blog Website is a web-based platform that uses 
 const contactContent = "This simple blog website was made by LBC. If you want to get in touch with him, the best way to get in touch with hime is through his email address which is ang_pogi_ko_talaga_walang_biro_10_18@gmail.com. Please wait at least 5 to 7 business days for him to reply and if he does not get back to you then forward your email by self replying on it.";
 
 const app = express();
+const port = 4007;
 
 app.set('view engine', 'ejs');
 
@@ -157,6 +158,6 @@ app.get("/contact", function(req, res){
 
 
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log("Server started on port 3000");
 });
